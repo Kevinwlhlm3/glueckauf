@@ -109,8 +109,10 @@
     <h3>Haftung für externe Inhalte/Dienste</h3>
     <p>
       Die App bezieht Sportdaten über die Schnittstelle von OpenLigaDB
-      (api.openligadb.de), einen Drittanbieter. Für dessen Inhalte und
-      Verfügbarkeit wird keine Haftung übernommen.
+      (api.openligadb.de), einen Drittanbieter. Für die Speicherung von
+      Spielerbewertungen wird zudem der Dienst Firebase (Google) genutzt,
+      siehe Datenschutzerklärung Abschnitt 4. Für Inhalte und Verfügbarkeit
+      dieser Drittanbieter wird keine Haftung übernommen.
     </p>
   </div>
 
@@ -148,19 +150,66 @@
       Installationsbenachrichtigung).
     </p>
 
-    <h3>4. Keine weitere Datenerhebung</h3>
+    <h3>4. Spielerbewertungen (Firebase)</h3>
+    <p>
+      Wenn du im Bereich "Spiele" eigene Sternebewertungen für Spieler
+      abgibst, nutzt die App dafür den Dienst Firebase (Google Ireland
+      Limited, Gordon House, Barrow Street, Dublin 4, Irland, bzw. Google
+      LLC, 1600 Amphitheatre Parkway, Mountain View, CA 94043, USA).
+    </p>
+    <p>
+      Beim ersten Abschicken einer Bewertung wird dein Gerät anonym bei
+      Firebase Authentication angemeldet. Dabei entsteht eine zufällige,
+      rein geräteseitige Kennung ("uid") - ohne Namen, E-Mail-Adresse oder
+      sonstige Profildaten.
+    </p>
+    <p>
+      Zusammen mit dieser Kennung werden folgende Angaben in der
+      Cloud-Firestore-Datenbank von Google gespeichert: die Spiel-ID, die
+      Saison, der Spielername, deine vergebene Sternebewertung (1-5) sowie
+      der Zeitpunkt der Abgabe. Diese Daten werden serverseitig
+      zusammengefasst (Durchschnitt und Anzahl der Bewertungen je Spieler
+      und Saison) und allen Nutzern der App als "Saison Performance"
+      angezeigt.
+    </p>
+    <p>
+      Die Datenbank wird in einem Rechenzentrum innerhalb der EU betrieben
+      (Region Frankfurt). Die Verarbeitung erfolgt im Rahmen der
+      Auftragsverarbeitung durch Google gemäß den Firebase-Nutzungsbedingungen.
+    </p>
+    <p>
+      Rechtsgrundlage ist Art. 6 Abs. 1 lit. f DSGVO (berechtigtes
+      Interesse an der Bereitstellung dieser Kernfunktion der App). Die
+      Bewertungsdaten werden zeitlich unbegrenzt gespeichert, da sie
+      Grundlage der dauerhaft angezeigten Durchschnittsbewertung sind; eine
+      nachträgliche Änderung oder Löschung einzelner abgegebener
+      Bewertungen ist technisch nicht vorgesehen.
+    </p>
+    <p>
+      Ohne Abgabe einer eigenen Bewertung findet keine Anmeldung bei
+      Firebase und keine Datenübertragung an Google statt.
+    </p>
+
+    <h3>5. Keine weitere Datenerhebung</h3>
     <p>
       Darüber hinaus erhebt, speichert oder verarbeitet die App keine
       personenbezogenen Daten. Es sind keine Analyse- oder Werbe-SDKs
-      eingebunden, es gibt keine Nutzerkonten und keine Eingabe
+      eingebunden. Außerhalb der in Abschnitt 4 beschriebenen
+      Spielerbewertungen gibt es keine Nutzerkonten und keine Eingabe
       persönlicher Daten innerhalb der App.
     </p>
 
-    <h3>5. Deine Rechte</h3>
+    <h3>6. Deine Rechte</h3>
     <p>
       Nach der DSGVO stehen dir u.a. das Recht auf Auskunft, Berichtigung,
       Löschung und Einschränkung der Verarbeitung deiner Daten zu. Wende
-      dich dazu an die oben genannte Kontaktadresse.
+      dich dazu an die oben genannte Kontaktadresse. Da die in Abschnitt 4
+      beschriebenen Bewertungsdaten ausschließlich über eine zufällige,
+      geräteseitige Kennung ohne weitere Identifizierungsmerkmale
+      gespeichert werden, kann eine Zuordnung zu einer bestimmten Person in
+      der Regel nicht erfolgen; bitte nenne bei einer Anfrage möglichst
+      genaue Angaben (z. B. betroffenes Spiel, Spieler, ungefährer
+      Zeitpunkt), damit wir den Eintrag identifizieren können.
     </p>
   </div>
 
