@@ -185,10 +185,12 @@
     <h3>4. Anonyme Zählung der Installationen</h3>
     <p>
       Beim ersten Öffnen meldet die App einmalig anonym eine Installation
-      (nur die Plattform iOS/Android, ohne Kennung), um die Gesamtzahl der
-      Installationen zu ermitteln. Dazu wird in der Cloud-Firestore-Datenbank
-      (Firebase, siehe Abschnitt 3) lediglich ein Zähler je Plattform um eins
-      erhöht; eine Anmeldung findet dabei nicht statt, und es werden keine
+      (nur die Plattform iOS/Android sowie, ob es sich um eine Test- bzw.
+      Prüfumgebung handelt – etwa TestFlight, die App-Prüfung durch Apple
+      oder automatische Testgeräte von Google –, ohne Kennung), um die
+      Gesamtzahl der Installationen zu ermitteln. Dazu wird in der
+      Cloud-Firestore-Datenbank (Firebase, siehe Abschnitt 3) lediglich ein
+      Zähler je Plattform bzw. Testumgebung um eins erhöht; eine Anmeldung findet dabei nicht statt, und es werden keine
       weiteren Angaben zu dir oder deinem Gerät gespeichert. Dass die Meldung
       bereits erfolgt ist, merkt sich die App lokal auf deinem Gerät. Wie bei
       jedem Abruf aus dem Internet wird dabei technisch bedingt deine
