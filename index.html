@@ -110,8 +110,9 @@
     <p>
       Die App bezieht Sportdaten über die Schnittstelle von OpenLigaDB
       (api.openligadb.de), einen Drittanbieter. Für die Speicherung von
-      Spielerbewertungen wird zudem der Dienst Firebase (Google) genutzt,
-      siehe Datenschutzerklärung Abschnitt 3. Für Inhalte und Verfügbarkeit
+      Spielerbewertungen und eine anonyme Zählung der Installationen wird
+      zudem der Dienst Firebase (Google) genutzt, siehe Datenschutzerklärung
+      Abschnitte 3 und 4. Für Inhalte und Verfügbarkeit
       dieser Drittanbieter wird keine Haftung übernommen.
     </p>
   </div>
@@ -180,7 +181,23 @@
       Zuordnung zu deiner Person findet dabei nicht statt.
     </p>
 
-    <h3>4. Keine weitere Datenerhebung</h3>
+    <h3>4. Anonyme Zählung der Installationen</h3>
+    <p>
+      Beim ersten Öffnen meldet die App einmalig anonym eine Installation
+      (nur die Plattform iOS/Android, ohne Kennung), um die Gesamtzahl der
+      Installationen zu ermitteln. Dazu wird in der Cloud-Firestore-Datenbank
+      (Firebase, siehe Abschnitt 3) lediglich ein Zähler je Plattform um eins
+      erhöht; eine Anmeldung findet dabei nicht statt, und es werden keine
+      weiteren Angaben zu dir oder deinem Gerät gespeichert. Dass die Meldung
+      bereits erfolgt ist, merkt sich die App lokal auf deinem Gerät. Wie bei
+      jedem Abruf aus dem Internet wird dabei technisch bedingt deine
+      IP-Adresse an Google übermittelt; eine Speicherung durch den Entwickler
+      oder eine Zuordnung zu deiner Person findet nicht statt.
+      Rechtsgrundlage ist Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse
+      an einer einfachen, anonymen Nutzungsstatistik).
+    </p>
+
+    <h3>5. Keine weitere Datenerhebung</h3>
     <p>
       Darüber hinaus erhebt, speichert oder verarbeitet die App keine
       personenbezogenen Daten. Es sind keine Analyse- oder Werbe-SDKs
@@ -189,7 +206,7 @@
       persönlicher Daten innerhalb der App.
     </p>
 
-    <h3>5. Deine Rechte</h3>
+    <h3>6. Deine Rechte</h3>
     <p>
       Nach der DSGVO stehen dir u.a. das Recht auf Auskunft, Berichtigung,
       Löschung und Einschränkung der Verarbeitung deiner Daten zu. Wende
