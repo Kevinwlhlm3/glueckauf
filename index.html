@@ -111,8 +111,9 @@
       Die App bezieht Sportdaten über die Schnittstelle von OpenLigaDB
       (api.openligadb.de), einen Drittanbieter. Für die Speicherung von
       Spielerbewertungen und eine anonyme Zählung der Installationen wird
-      zudem der Dienst Firebase (Google) genutzt, siehe Datenschutzerklärung
-      Abschnitte 3 und 4. Für Inhalte und Verfügbarkeit
+      zudem der Dienst Firebase (Google) genutzt, für optionale
+      Push-Benachrichtigungen außerdem der Push-Dienst von Expo, siehe
+      Datenschutzerklärung Abschnitte 3 bis 5. Für Inhalte und Verfügbarkeit
       dieser Drittanbieter wird keine Haftung übernommen.
     </p>
   </div>
@@ -197,7 +198,36 @@
       an einer einfachen, anonymen Nutzungsstatistik).
     </p>
 
-    <h3>5. Keine weitere Datenerhebung</h3>
+    <h3>5. Push-Benachrichtigungen (optional)</h3>
+    <p>
+      Nach deiner ersten abgegebenen Bewertung fragt die App einmalig, ob sie
+      dich benachrichtigen soll, sobald du das nächste Spiel bewerten kannst.
+      Nur wenn du zustimmst und die Mitteilungen auch in den Einstellungen
+      deines Geräts erlaubt sind, wird ein Push-Token gespeichert. Ein
+      Push-Token ist eine zufällige, gerätespezifische Kennung, über die
+      Benachrichtigungen zugestellt werden; es enthält weder deinen Namen
+      noch ein Nutzerkonto.
+    </p>
+    <p>
+      Gespeichert werden in der Cloud-Firestore-Datenbank (Firebase, siehe
+      Abschnitt 3) ausschließlich das Push-Token, die Plattform (iOS oder
+      Android) und der Zeitpunkt der letzten Bestätigung. Zugriff darauf hat
+      nur der Entwickler, um die Benachrichtigungen zu versenden. Die
+      Zustellung erfolgt über den Push-Dienst von Expo (650 Industries, Inc.,
+      USA), der die Nachrichten an den Apple Push Notification Service
+      (Apple) bzw. Firebase Cloud Messaging (Google) weiterleitet. Dabei kann
+      eine Übermittlung in die USA erfolgen.
+    </p>
+    <p>
+      Rechtsgrundlage ist deine Einwilligung (Art. 6 Abs. 1 lit. a DSGVO).
+      Du kannst sie jederzeit widerrufen, indem du die Mitteilungen für die
+      App in den Einstellungen deines Geräts abschaltest; die App löscht ihr
+      Push-Token dann beim nächsten Start aus der Datenbank. Wird die App
+      gelöscht, wird das Token entfernt, sobald eine Benachrichtigung nicht
+      mehr zugestellt werden kann.
+    </p>
+
+    <h3>6. Keine weitere Datenerhebung</h3>
     <p>
       Darüber hinaus erhebt, speichert oder verarbeitet die App keine
       personenbezogenen Daten. Es sind keine Analyse- oder Werbe-SDKs
@@ -206,7 +236,7 @@
       persönlicher Daten innerhalb der App.
     </p>
 
-    <h3>6. Deine Rechte</h3>
+    <h3>7. Deine Rechte</h3>
     <p>
       Nach der DSGVO stehen dir u.a. das Recht auf Auskunft, Berichtigung,
       Löschung und Einschränkung der Verarbeitung deiner Daten zu. Wende
